@@ -1,7 +1,0 @@
-site_name: Rommel's Lab
-nav:
-  - Home: index.md
-  - About: about.md
-  - Publications: publications.md
-  - Classes: classes.md
-theme: readthedocs
