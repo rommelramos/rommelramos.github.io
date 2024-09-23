@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>Classes - Rommel's Lab</title>
+<link href="../css/theme.css" rel="stylesheet"/>
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
+<script>
+        // Current page data
+        var mkdocs_page_name = "Classes";
+        var mkdocs_page_input_path = "classes.md";
+        var mkdocs_page_url = null;
+      </script>
+<!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+<body class="wy-body-for-nav" role="document">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Rommel's Lab
+        </a><div role="search">
+<form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
+</div>
+</div>
+<div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../publications/">Publications</a>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="#">Classes</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#graduate-classes">Graduate classes</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#linux-ppgbm">LINUX (PPGBM)</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#orientacoes">Orientações</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#estrutura-de-diretorios">Estrutura de Diretórios</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#indentificando-o-diretorio-onde-se-esta">Indentificando o diretório onde se está</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#acessando-diretorios">Acessando diretórios</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#listando-arquivos-e-diretorios">Listando arquivos e diretórios</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#criando-arquivos">Criando Arquivos</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#criando-diretorios">Criando diretórios</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#visualizando-conteudo-de-arquivos">Visualizando conteúdo de arquivos</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#copiando-arquivos-e-diretorios">Copiando arquivos e Diretórios</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#removendo-arquivos-e-diretorios">Removendo Arquivos e Diretórios</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#movendo-arquivos-e-diretorios">Movendo Arquivos e Diretórios</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#tornando-se-super-usuario">Tornando-se super usuário</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#buscando-arquivos-em-diretorios">Buscando arquivos em diretórios</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#descobrindo-o-endereco-ip">Descobrindo o endereço IP</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#testando-o-ip-do-servidor-remoto">Testando o IP do servidor remoto</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#acesso-remoto-ssh">Acesso remoto SSH</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#acesso-remoto-ftp">Acesso remoto FTP</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#buscandoinstalandoremovendo-pacotes-do-sistema-operacional">Buscando/Instalando/removendo Pacotes do Sistema operacional</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#buscandoinstalandoremovendo-pacotes-do-python-via-pip">Buscando/Instalando/removendo Pacotes do Python via PIP</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#genome-assembly-ppgbm">Genome Assembly (PPGBM)</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#undergraduate-classes">Undergraduate classes</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#xx">XX</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="Mobile navigation menu" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Rommel's Lab</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a aria-label="Docs" class="icon icon-home" href=".."></a></li>
+<li class="breadcrumb-item active">Classes</li>
+<li class="wy-breadcrumbs-aside">
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div class="section" itemprop="articleBody">
+<h1 id="classes"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.</span> Classes</h1>
+<h2 id="graduate-classes"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1</span> Graduate classes</h2>
+<h3 id="linux-ppgbm"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1</span> LINUX (PPGBM)</h3>
+<p>Link para a sala do classroom para os estudantes do PPGBM:
+ <a href="http://www.diligitur.com/flammis-necis">Classe Google ClassRoom</a></p>
+<h4 id="orientacoes"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.1</span> Orientações</h4>
+<ul>
+<li>Terminal - Aplicativo, geralmente relacionado a ausência de interface gráfica, de onde se pode executar comandos;</li>
+<li>Diretório corrente - Diretório onde se está acessando via terminal no momento;</li>
+<li>Diretório raiz - Diretório <code>/</code> que é o diretório de onde são originados os demais</li>
+<li>Home- Faz referência ao diretório do usuário, caso o usuário seja "fulano", o home é <code>/home/fulano</code></li>
+<li>
+<p>* é um símbolo coringa, por exemplo: *.txt, significa que se busca algo que tenha qualquer prefixo mas que o sufixo seja <em>.txt</em></p>
+</li>
+<li>
+<p>Sintaxe básica da execução de comandos no terminal</p>
+</li>
+<li>
+<p><code>NomeDoComando [opções] [parâmetros]</code> - Sintaxe de comandos</p>
+</li>
+</ul>
+<h4 id="estrutura-de-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.2</span> Estrutura de Diretórios</h4>
+<pre><code>    Nível 0 - /
+    Nível 1 - /home
+    Nível 2 - /home/user
+    Nível 3 - /home/user/arquivo.txt
+    Nível 3 - /home/user/diretorio1
+    Nível 4 - /home/user/diretorio1/arquivo2.txt
+</code></pre>
+<h4 id="indentificando-o-diretorio-onde-se-esta"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.3</span> Indentificando o diretório onde se está</h4>
+<p><code>pwd</code>- Verificar o caminho onde se está no terminal</p>
+<pre><code>    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files.
+</code></pre>
+<h4 id="acessando-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.4</span> Acessando diretórios</h4>
+<p><code>cd</code> permite navegar até determinada pasta.</p>
+<p>Use <code>cd ..</code> <strong>(com dois pontos seguidos)</strong> para retornar ao diretório imediatamente anterior</p>
+<p>Use <code>cd ~</code> para acessar o diretório inicial de outro usuário.</p>
+<h4 id="listando-arquivos-e-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.5</span> Listando arquivos e diretórios</h4>
+<p><code>ls</code> Lista todos os arquivos e diretórios dentro do diretório onde se está executando ou no diretório alvo.</p>
+<p><code>ls</code> Comando simples</p>
+<p><code>ls /home/rommelramos</code> Comando simples indicando o diretório alvo</p>
+<p><code>ls -R</code> Lista todos os arquivos nos subdiretórios. </p>
+<p><code>ls -a</code> Lista todos os arquivos ocultos. </p>
+<p><code>ls -lha</code> Lista todos com informações detalhadas, incluindo permissões, data de criação e tamanho de arquivos.</p>
+<h4 id="criando-arquivos"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.6</span> Criando Arquivos</h4>
+<p><code>touch arquivo.txt</code> Criando um arquivo vazio </p>
+<p><code>echo "conteudo de teste" &gt; arquivo.txt</code> Direcionando a saíde do comando echo para um arquivo através do símbolo <strong>&gt;</strong> </p>
+<h4 id="criando-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.7</span> Criando diretórios</h4>
+<p><code>mkdir dir1</code> Criando diretório dentro do diretório corrente.</p>
+<p><code>mkdir /home/rommel/dir1</code> Criando diretório dentro do diretório home do <em>usuário</em> Rommel.</p>
+<h4 id="visualizando-conteudo-de-arquivos"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.8</span> Visualizando conteúdo de arquivos</h4>
+<p><code>less arquivo.txt</code> Visualizando no terminal o conteúdo do arquivo.txt. Pressionando o <em>espaço</em>, <em>enter</em> ou <em>direcional para baixo e para cima</em> consegue nevagar pelo arquivo.</p>
+<p><code>more arquivo.txt</code> Visualizando no terminal o conteúdo do arquivo.txt. Pressionando o <em>espaço</em> caso o texto tenha muitas linhas ele será percorrido.</p>
+<p><code>cat arquivo.txt</code> Visualizando no terminal o conteúdo do arquivo.txt.</p>
+<h4 id="copiando-arquivos-e-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.9</span> Copiando arquivos e Diretórios</h4>
+<p><em>cp [arquivo1] [arquivoN] [destino]</em></p>
+<p><code>cp arquivo.txt /home/rommel/Documents</code> Copiando o arquivo.txt para o diretório /home/rommel/Documents</p>
+<p><code>cp arquivo1.txt arquivo2.txt arquivo3.txt /home/username/Documents</code>- Copiando o arquivo1.txt, arquivo2.txt e arquivo3.txt para o diretório /home/rommel/Documents</p>
+<p><em>cp -r [diretório] [destino]</em></p>
+<p><code>cp dir1/ /home/rommel/Documents</code> Copiando o diretório dir1/ para dentro do diretório /home/rommel/Documents</p>
+<h4 id="removendo-arquivos-e-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.10</span> Removendo Arquivos e Diretórios</h4>
+<p><em>rm [arquivo1]</em></p>
+<p><code>rm arquivo.txt</code> Removendo arquivo</p>
+<p><code>rm -rf dir1/</code> Removendo diretório</p>
+<h4 id="movendo-arquivos-e-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.11</span> Movendo Arquivos e Diretórios</h4>
+<p><em>mv [arquivo1] dirnovo/[arquivot_novo.txt]</em></p>
+<p><code>mv arquivo1.txt /home/rommelramos/Documents/</code>- Movendo arquivo1.txt para diretório <em>/home/rommelramos/Documents/</em></p>
+<p><code>mv arquivo1.txt arquivo_novo.txt</code>- Renomeando o arquivo1.txt para arquivo_novo.txt</p>
+<h4 id="tornando-se-super-usuario"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.12</span> Tornando-se super usuário</h4>
+<p><code>sudo su -</code> Caso seu usuário esteja no arquivo <em>/etc/sudoers</em></p>
+<pre><code>        root ALL = (ALL) ALL
+</code></pre>
+<p>Adicionando o usuário rommel ao <em>sudoers</em></p>
+<pre><code>        root ALL = (ALL) ALL
+        rommel ALL = (ALL) ALL
+</code></pre>
+<h4 id="buscando-arquivos-em-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.13</span> Buscando arquivos em diretórios</h4>
+<p><code>find dir1/ -name *.txt</code>- Procura no diretório <em>dir1/</em> qualquer arquivo com sufixo *.txt </p>
+<p><code>locate</code> Utilizado para busca de arquivos dentro de uma base do próprio sistema (banco de dados), mas arquivos recentes podem não estar presentes</p>
+<p><code>locate index.html</code> - Buscando o arquivo index.html no sistema em todos os diretórios a partir do banco de dados.</p>
+<pre><code>/opt/homebrew/Cellar/pmix/4.2.9/share/doc/pmix/html/man/index.html
+/opt/homebrew/Cellar/pmix/4.2.9/share/doc/pmix/html/man/man1/index.html
+/opt/homebrew/Cellar/pmix/4.2.9/share/doc/pmix/html/man/man3/index.html
+/opt/homebrew/Cellar/pmix/4.2.9/share/doc/pmix/html/man/man5/index.html
+/opt/homebrew/Cellar/pmix/4.2.9/share/doc/pmix/html/news/index.html
+/opt/homebrew/Cellar/pmix/4.2.9/share/doc/pmix/html/release-notes/index.html
+/opt/homebrew/Cellar/xz/5.6.0/share/doc/xz/api/index.html
+/opt/homebrew/Cellar/xz/5.6.1/share/doc/xz/api/index.html
+/opt/homebrew/Cellar/z3/4.12.6/share/z3/examples/python/tutorial/html/index.html
+/usr/share/doc/cups/index.html
+/usr/share/doc/postfix/html/index.html
+</code></pre>
+<h4 id="descobrindo-o-endereco-ip"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.14</span> Descobrindo o endereço IP</h4>
+<p><code>ifconfig</code> Apresenta o endereço IP da máquina</p>
+<h4 id="testando-o-ip-do-servidor-remoto"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.15</span> Testando o IP do servidor remoto</h4>
+<p><code>ping 8.8.8.8</code> Faz um teste de comunicação para avaliar se o IP está disponível
+<em>Pode não funcionar por questão de controle de segurança da rede onde está o computador com IP 8.8.8.8</em></p>
+<p><code>nmap -v 8.8.8.8</code> Verificando as portas abertas no servidor 8.8.8.8</p>
+<h4 id="acesso-remoto-ssh"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.16</span> Acesso remoto SSH</h4>
+<h4 id="acesso-remoto-ftp"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.17</span> Acesso remoto FTP</h4>
+<h4 id="buscandoinstalandoremovendo-pacotes-do-sistema-operacional"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.18</span> Buscando/Instalando/removendo Pacotes do Sistema operacional</h4>
+<h4 id="buscandoinstalandoremovendo-pacotes-do-python-via-pip"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1.19</span> Buscando/Instalando/removendo Pacotes do Python via PIP</h4>
+<h3 id="genome-assembly-ppgbm"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.2</span> Genome Assembly (PPGBM)</h3>
+<p>Em breve</p>
+<p>// #### XXX </p>
+<h2 id="undergraduate-classes"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2</span> Undergraduate classes</h2>
+<p>Em breve</p>
+<h3 id="xx"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2.1</span> XX</h3>
+</div>
+</div><footer>
+<div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-left" href="../publications/" title="Publications"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+</div>
+</div>
+</section>
+</div>
+<div aria-label="Versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../publications/" style="color: #fcfcfc">« Previous</a></span>
+</span>
+</div>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script>var base_url = "..";</script>
+<script src="../js/theme_extra.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../search/main.js"></script>
+<script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+</body>
+</html>
