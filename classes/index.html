@@ -64,11 +64,13 @@
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#criando-arquivos">Criando Arquivos</a>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#criando-diretorios">Criando diretórios</a>
-</li>
 <li class="toctree-l4"><a class="reference internal" href="#visualizando-conteudo-de-arquivos">Visualizando conteúdo de arquivos</a>
 </li>
+<li class="toctree-l4"><a class="reference internal" href="#criando-diretorios">Criando diretórios</a>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="#copiando-arquivos-e-diretorios">Copiando arquivos e Diretórios</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#filtrando-arquivos-com-pistas">Filtrando arquivos com pistas</a>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#removendo-arquivos-e-diretorios">Removendo Arquivos e Diretórios</a>
 </li>
@@ -95,6 +97,8 @@
 <li class="toctree-l4"><a class="reference internal" href="#instalandoremovendo-pacotes-do-python-via-pip">Instalando/removendo Pacotes do Python via PIP</a>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#avaliando-a-integridade-de-arquivo-md5sum">Avaliando a Integridade de arquivo (MD5SUM)</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#awk">AWK</a>
 </li>
 </ul>
 </li>
@@ -180,28 +184,37 @@
 <h4 id="criando-arquivos"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.7</span> Criando Arquivos</h4>
 <p><code>touch arquivo.txt</code> Criando um arquivo vazio </p>
 <p><code>echo "conteudo de teste" &gt; arquivo.txt</code> Direcionando a saíde do comando echo para um arquivo através do símbolo <strong>&gt;</strong> </p>
-<h4 id="criando-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.8</span> Criando diretórios</h4>
-<p><code>mkdir dir1</code> Criando diretório dentro do diretório corrente.</p>
-<p><code>mkdir /home/rommel/dir1</code> Criando diretório dentro do diretório home do <em>usuário</em> Rommel.</p>
-<h4 id="visualizando-conteudo-de-arquivos"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.9</span> Visualizando conteúdo de arquivos</h4>
+<p>Você também pode redirecionar a saída de comandos:</p>
+<pre><code>ls &gt; "resultado_ls.txt" #Teste e observe o resultado visulizando o resultado
+</code></pre>
+<h4 id="visualizando-conteudo-de-arquivos"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.8</span> Visualizando conteúdo de arquivos</h4>
 <p><code>less arquivo.txt</code> Visualizando no terminal o conteúdo do arquivo.txt. Pressionando o <em>espaço</em>, <em>enter</em> ou <em>direcional para baixo e para cima</em> consegue nevagar pelo arquivo.</p>
 <p><code>more arquivo.txt</code> Visualizando no terminal o conteúdo do arquivo.txt. Pressionando o <em>espaço</em> caso o texto tenha muitas linhas ele será percorrido.</p>
 <p><code>cat arquivo.txt</code> Visualizando no terminal o conteúdo do arquivo.txt.</p>
+<h4 id="criando-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.9</span> Criando diretórios</h4>
+<p><code>mkdir dir1</code> Criando diretório dentro do diretório corrente.</p>
+<p><code>mkdir /home/rommel/dir1</code> Criando diretório dentro do diretório home do <em>usuário</em> Rommel.</p>
+<p><strong>Atividade 1 - Google Classroom</strong></p>
 <h4 id="copiando-arquivos-e-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.10</span> Copiando arquivos e Diretórios</h4>
 <p><em>cp [arquivo1] [arquivoN] [destino]</em></p>
 <p><code>cp arquivo.txt /home/rommel/Documents</code> Copiando o arquivo.txt para o diretório /home/rommel/Documents</p>
 <p><code>cp arquivo1.txt arquivo2.txt arquivo3.txt /home/username/Documents</code>- Copiando o arquivo1.txt, arquivo2.txt e arquivo3.txt para o diretório /home/rommel/Documents</p>
 <p><em>cp -r [diretório] [destino]</em></p>
-<p><code>cp dir1/ /home/rommel/Documents</code> Copiando o diretório dir1/ para dentro do diretório /home/rommel/Documents</p>
-<h4 id="removendo-arquivos-e-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.11</span> Removendo Arquivos e Diretórios</h4>
+<p><code>cp -r dir1/ /home/rommel/Documents</code> Copiando o diretório dir1/ para dentro do diretório /home/rommel/Documents</p>
+<h4 id="filtrando-arquivos-com-pistas"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.11</span> Filtrando arquivos com pistas</h4>
+<p><em>grep '[pista]' [arquivo alvo]</em></p>
+<p><code>grep 'teste' arquivo.txt</code> - Este comando retornará apenas as listas que apresentam a palavra <em>teste</em></p>
+<p><strong>Atividade 2 - Google Classroom</strong></p>
+<h4 id="removendo-arquivos-e-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.12</span> Removendo Arquivos e Diretórios</h4>
 <p><em>rm [arquivo1]</em></p>
 <p><code>rm arquivo.txt</code> Removendo arquivo</p>
 <p><code>rm -rf dir1/</code> Removendo diretório</p>
-<h4 id="movendo-arquivos-e-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.12</span> Movendo Arquivos e Diretórios</h4>
+<h4 id="movendo-arquivos-e-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.13</span> Movendo Arquivos e Diretórios</h4>
 <p><em>mv [arquivo1] dirnovo/[arquivot_novo.txt]</em></p>
 <p><code>mv arquivo1.txt /home/rommelramos/Documents/</code>- Movendo arquivo1.txt para diretório <em>/home/rommelramos/Documents/</em></p>
 <p><code>mv arquivo1.txt arquivo_novo.txt</code>- Renomeando o arquivo1.txt para arquivo_novo.txt</p>
-<h4 id="tornando-se-super-usuario"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.13</span> Tornando-se super usuário</h4>
+<p><strong>Atividade 3 - Google Classroom</strong></p>
+<h4 id="tornando-se-super-usuario"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.14</span> Tornando-se super usuário</h4>
 <p><code>sudo su -</code> Caso seu usuário esteja no arquivo <em>/etc/sudoers</em></p>
 <pre><code>        root ALL = (ALL) ALL
 </code></pre>
@@ -209,7 +222,7 @@
 <pre><code>        root ALL = (ALL) ALL
         rommel ALL = (ALL) ALL
 </code></pre>
-<h4 id="buscando-arquivos-em-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.14</span> Buscando arquivos em diretórios</h4>
+<h4 id="buscando-arquivos-em-diretorios"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.15</span> Buscando arquivos em diretórios</h4>
 <p><code>find dir1/ -name *.txt</code>- Procura no diretório <em>dir1/</em> qualquer arquivo com sufixo *.txt </p>
 <p><code>locate</code> Utilizado para busca de arquivos dentro de uma base do próprio sistema (banco de dados), mas arquivos recentes podem não estar presentes</p>
 <p><code>locate index.html</code> - Buscando o arquivo index.html no sistema em todos os diretórios a partir do banco de dados.</p>
@@ -225,13 +238,14 @@
 /usr/share/doc/cups/index.html
 /usr/share/doc/postfix/html/index.html
 </code></pre>
-<h4 id="descobrindo-o-endereco-ip"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.15</span> Descobrindo o endereço IP</h4>
+<h4 id="descobrindo-o-endereco-ip"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.16</span> Descobrindo o endereço IP</h4>
 <p><code>ifconfig</code> Apresenta o endereço IP da máquina</p>
-<h4 id="testando-o-ip-do-servidor-remoto"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.16</span> Testando o IP do servidor remoto</h4>
+<h4 id="testando-o-ip-do-servidor-remoto"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.17</span> Testando o IP do servidor remoto</h4>
 <p><code>ping 8.8.8.8</code> Faz um teste de comunicação para avaliar se o IP está disponível
 <em>Pode não funcionar por questão de controle de segurança da rede onde está o computador com IP 8.8.8.8</em></p>
 <p><code>nmap -v 8.8.8.8</code> Verificando as portas abertas no servidor 8.8.8.8</p>
-<h4 id="gerenciamento-atualizacao-e-sistema-linux-aptitude"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.17</span> Gerenciamento atualização e sistema Linux (APTITUDE)</h4>
+<p><strong>Atividade 4 - Google Classroom</strong></p>
+<h4 id="gerenciamento-atualizacao-e-sistema-linux-aptitude"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.18</span> Gerenciamento atualização e sistema Linux (APTITUDE)</h4>
 <pre><code>sudo apt update #Atualiza a lista de pacotes e programas que podem ser instalados na máquina.
 
 sudo apt upgrade #Atualiza o sistema, baixa e instala as atualizações dos pacotes
@@ -242,12 +256,12 @@ sudo apt upgrade #Atualiza o sistema, baixa e instala as atualizações dos paco
        deb http://security.ubuntu.com/ubuntu focal-security main restricted
        deb http://us.archive.ubuntu.com/ubuntu focal-updates main restricted
 </code></pre>
-<h4 id="buscandoinstalandoremovendo-pacotes-do-sistema-operacional"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.18</span> Buscando/Instalando/removendo Pacotes do Sistema operacional</h4>
+<h4 id="buscandoinstalandoremovendo-pacotes-do-sistema-operacional"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.19</span> Buscando/Instalando/removendo Pacotes do Sistema operacional</h4>
 <pre><code>apt-cache search pista #Localiza pacotes disponíveis para o sistema no repositório
 apt-get install pacote10.2 #Com o nome do pacote identificado, você pode usar o NOME EXATO DO PACOTE para instalar
 apt-get remove pacote10.2 #Com o nome do pacote identificado, você pode usar o NOME EXATO DO PACOTE para instalar
 </code></pre>
-<h4 id="levantando-um-servico-ssh"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.19</span> Levantando um Serviço SSH</h4>
+<h4 id="levantando-um-servico-ssh"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.20</span> Levantando um Serviço SSH</h4>
 <pre><code>apt install openssh-server
 
 vim /etc/ssh/ssh_config #Apenas com permissões você pode alterar o arquivo
@@ -262,7 +276,7 @@ IdentityFile ~/.ssh/id_ecdsa
 IdentityFile ~/.ssh/id_ed25519
 Port 22 #Lista correta, trocar o número 22 por outro.
 </code></pre>
-<h4 id="acesso-remoto-via-secure-socket-shell-ssh"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.20</span> Acesso remoto via Secure Socket Shell (SSH)</h4>
+<h4 id="acesso-remoto-via-secure-socket-shell-ssh"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.21</span> Acesso remoto via Secure Socket Shell (SSH)</h4>
 <p><em>ssh [usuário]@[IP] -p [Porta de Acesso]</em></p>
 <p>Servidor: 200.239.1.155
 Porta: 3444</p>
@@ -278,19 +292,20 @@ scp arquivo.txt biotec@200.239.92.159:/home/biotec #Copiando o arquivo do diret�
 <p>Para copiar diretórios, deve-se utilizar o parâmetro -r </p>
 <pre><code> scp -r dir1/ biotec@200.239.92.159:/home/biotec
 </code></pre>
-<h4 id="acesso-remoto-ftp"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.21</span> Acesso remoto FTP</h4>
-<h4 id="instalandoremovendo-pacotes-do-python-via-pip"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.22</span> Instalando/removendo Pacotes do Python via PIP</h4>
+<h4 id="acesso-remoto-ftp"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.22</span> Acesso remoto FTP</h4>
+<h4 id="instalandoremovendo-pacotes-do-python-via-pip"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.23</span> Instalando/removendo Pacotes do Python via PIP</h4>
 <p>Alguns pacote não são do sistema operacional, mas sim de algum recurso do Python. Então podemos instalar via terminal também usando o pip</p>
 <p>[Site Pypi] (https://pypi.org/) Site para buscar pacotes do Python</p>
 <pre><code>#Para instalar via terminal
 pip install scikit-learn
 </code></pre>
-<h4 id="avaliando-a-integridade-de-arquivo-md5sum"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.23</span> Avaliando a Integridade de arquivo (MD5SUM)</h4>
+<h4 id="avaliando-a-integridade-de-arquivo-md5sum"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.24</span> Avaliando a Integridade de arquivo (MD5SUM)</h4>
 <p>md5sum é muito utilizado para verificar se o arquivo transmitido está corrompido.</p>
 <p><code>md5sum arquivo.txt</code> O argumento é apenas o arquivo para  verificar a integridade de arquivos após transmissão</p>
 <p><em>Resultado da execução:</em></p>
 <pre><code>1ca308df6cdb0a8bf40d59be2a17eac1  arquivo.txt
 </code></pre>
+<h4 id="awk"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1.25</span> AWK</h4>
 <h3 id="genome-assembly-ppgbm"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.2</span> Genome Assembly (PPGBM)</h3>
 <p>Em breve</p>
 <p>// #### XXX </p>
